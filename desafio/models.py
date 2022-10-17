@@ -7,4 +7,4 @@ class Familiar(models.Model):
       numero_dni = models.IntegerField()
 
 def __str__(self):
-      return f"{self.nombre}, {self.numero_dni}, {self.id}"
+      return f"{self.nombre}, {self.numero_dni}, {self.id}" 
