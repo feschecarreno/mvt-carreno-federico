@@ -7,4 +7,3 @@ def index(request):
 def mostrar_familiares(request):
   lista_familiares = Familiar.objects.all()
   return render(request, "desafio/familiares.html", {"lista_familiares": lista_familiares})
-

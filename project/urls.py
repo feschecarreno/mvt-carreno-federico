@@ -20,7 +20,8 @@ from desafio.views import index, mostrar_familiares
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('familiares/', index),
+    path('familiares/', index), 
     path('mi-familia/', mostrar_familiares),
+   
 
 ]
