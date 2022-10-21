@@ -15,13 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from desafio.views import index, mostrar_familiares
-
+from desafio.views import index, mostrar_familiares, BuscarFamiliar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('familiares/', index), 
     path('mi-familia/', mostrar_familiares),
-   
+    path('mi-familia/buscar', BuscarFamiliar.as_view()),
+
 
 ]
