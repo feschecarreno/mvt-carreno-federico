@@ -1,10 +1,8 @@
 from django.shortcuts import render
 from desafio.models import Familiar
-from desafio.forms import Buscar, FamiliarForm
+from desafio.forms import  Buscar, FamiliarForm
 from django.views import View
 
-def index(request):
-    return render(request, "desafio/familiares.html", {"lista_familiares": Familiar.objects.all()})
 
 def mostrar_familiares(request):
   lista_familiares = Familiar.objects.all()

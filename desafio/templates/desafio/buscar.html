@@ -1,5 +1,8 @@
   {% extends 'desafio/base.html' %}
-{% block titulo%} Buscar Familiares por nombre {% endblock %}
+{% block titulo%}
+ Buscar Familiares por nombre 
+ {% endblock %}
+
 {% block contenido %}
   
   <form action="/mi-familia/buscar" method="post">
@@ -13,4 +16,5 @@
           <li>  Nombre: {{familiar.nombre}}, Dirección: {{familiar.direccion}}, Dni: {{familiar.numero_dni}}, Fecha de nacimiento: {{familiar.fecha_de_nacimiento}}</li>
       </ul>
   {% endfor %}
+  
 {% endblock %}
