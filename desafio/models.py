@@ -7,6 +7,5 @@ class Familiar(models.Model):
     fecha_de_nacimiento = models.DateField(auto_now_add=False, auto_now=False, null=True)
 
     def __str__(self):
-      return f"{self.nombre}, {self.numero_dni}, {self.fecha_de_nacimiento}, {self.id}"
-
+      return f"{self.nombre}, {self.numero_dni},{self.fecha_de_nacimiento}, {self.id}"
 

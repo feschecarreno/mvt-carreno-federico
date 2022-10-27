@@ -33,7 +33,6 @@ class AltaFamiliar(View):
     form_class = FamiliarForm
     template_name = 'desafio/alta_familiar.html'
     initial = {"nombre":"", "direccion":"", "numero_dni":"", "fecha_de_nacimiento":""}
-    
 
     def get(self, request):
         form = self.form_class(initial=self.initial)
@@ -47,5 +46,4 @@ class AltaFamiliar(View):
             form = self.form_class(initial=self.initial)
             return render(request, self.template_name, {'form':form, 
                                                         'msg_exito': msg_exito})
-        
-        return render(request, self.template_name, {"form": form})
+        return render(request, self.template_name, {"form": form})    

@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('mi-familia/', mostrar_familiares),
     path('mi-familia/buscar', BuscarFamiliar.as_view()),
-    path('mi-familia/alta', AltaFamiliar.as_view),
+    path('mi-familia/alta', AltaFamiliar.as_view()),
 
 ]
